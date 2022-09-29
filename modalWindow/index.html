@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./modalStyle.css">
+    <title>Modal 창 구현</title>
+</head>
+<script src="./jquery-3.0.0.min.js"></script>
+<body>
+    <h2>Modal Example</h2>
+    
+    <!--Open the Modal-->
+    <button id="openBtn">Open</button>
+
+    <!--Modal window-->
+    <div id="modalWin" class="modal">
+        <!-- Modal Component-->
+        <div id="modal-content" class="modal-content">
+            <span class="close"> x </span>
+            <div class="title">
+                <h2>Modal window</h2>
+            </div>
+            <div class="content-area">
+                <p>화면 위에 하나의 작은 화면을 더 만들어 부가적인 일들을 처리할 수 있게 만드는 기능</p>
+            </div>
+            <div class="title">
+                <h2>사용법</h2>
+            </div>
+            <div class="content-area">
+                <ul>
+                    <li>버튼 클릭 시 모달창이 켜지는 기능 (open)</li>
+                    <li>modal 창 안의 X 버튼 클릭 시 창이 꺼지는 기능</li>
+                    <li>모달 창이 켜진 상태에서 esc 키를 누를 경우 모달창이 꺼지는 기능</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./modal-dialog.js"></script>
+</html>
